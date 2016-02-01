@@ -1,0 +1,12 @@
+Sub NameByCells()
+
+Dim i&, j&
+
+For i = 2 To Sheets.Count
+    j = i + 2
+
+    Sheets(i).Name = Sheets(1).Cells(j, 1)
+
+Next
+
+End Sub
